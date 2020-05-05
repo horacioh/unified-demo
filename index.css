@@ -1,0 +1,41 @@
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.editor {
+  position: relative;
+  max-width: 37em;
+  margin: auto;
+  overflow: hidden;
+}
+
+textarea,
+.draw {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  /* Can’t use a nice font: kerning renders differently in textareas. */
+  font-family: monospace;
+  line-height: inherit;
+  font-size: inherit;
+  background: transparent;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+textarea {
+  color: inherit;
+  position: absolute;
+  top: 0;
+}
+
+.draw {
+  min-height: 100vh;
+}
